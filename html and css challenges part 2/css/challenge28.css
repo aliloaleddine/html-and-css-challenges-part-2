@@ -1,0 +1,276 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas:
+        "nav nav"
+        "hed as1"
+        "main as1"
+        "main as2";
+    gap: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+/*smail*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* media */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*str nav*/
+nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li:not(:last-child):after {
+    content: " >";
+    font-weight: bolder;
+}
+
+/*end nav*/
+
+/*star asides*/
+aside {
+    border: 1px solid #ebebeb;
+    padding: 20px;
+}
+
+aside>ul {
+    padding: 20px 0;
+}
+
+aside ul li {
+    padding: 5px 10px;
+    color: #94a4b2;
+}
+
+aside ul li a {
+    color: #94a4b2;
+    flex-grow: 1;
+}
+
+.as1 {
+    grid-area: as1;
+}
+
+.as1>ul>li>.link {
+    display: flex;
+}
+
+.as1>ul>li>.link {
+    display: flex;
+}
+
+.as1 ul li .link a:last-of-type {
+    position: relative;
+}
+
+.as1 ul li .link a:last-of-type::after {
+    content: " ";
+    position: absolute;
+    border: 2px solid;
+    border-color: #94a4b2 #94a4b2 transparent transparent;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    right: 0;
+    top: 50%;
+}
+
+.as1 ul li:not(:first-child) .link a:last-of-type::after {
+    transform: rotate(135deg);
+}
+
+
+.as2 {
+    grid-area: as2;
+}
+
+aside h3 {
+    position: relative;
+    padding: 10px 0;
+}
+
+aside h3::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #f4a594;
+}
+
+.as2 ul li {
+    position: relative;
+}
+
+.as2 ul li::before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 2px 2px 5px 1px;
+}
+
+.as2 ul li:nth-child(1):before {
+    background-color: gray;
+}
+
+.as2 ul li:nth-child(2):before {
+    background-color: white;
+}
+
+.as2 ul li:nth-child(3):before {
+    background-color: black;
+}
+
+.as2 ul li:nth-child(4):before {
+    background-color: #c19a6b;
+}
+
+.as2 ul li:nth-child(5):before {
+    background-color: orange;
+}
+
+
+/*end asides*/
+/*str header*/
+header {
+    grid-area: hed;
+    background-image: linear-gradient(88deg, #988efe 40%, #70d1fe 60%);
+    height: 300px;
+}
+
+/*str main*/
+
+main {
+    grid-area: main;
+}
+
+main>section {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+main>section div a {
+    margin-right: 5px;
+}
+
+main>section div a i {
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+
+main>section form select {
+    border: none;
+    outline: none;
+    margin: 0 20px 0 10px;
+}
+
+main>section form select:last-child {
+    width: 130px;
+    padding: 3px;
+}
+
+main article {
+    display: flex;
+}
+
+main article .imag {
+    position: relative;
+    margin-right: 10px;
+    width: 500px;
+}
+
+main article .imag::before {
+    content: "-12%";
+    position: absolute;
+    z-index: 1;
+    background-color: red;
+    color: white;
+    top: 10px;
+    right: 0;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+main article section .stars {
+    display: flex;
+    color: gold;
+    font-size: 12px;
+}
+
+main article section .stor {
+    display: flex;
+    margin-top: 20px;
+}
+
+main article section .stor i {
+    padding: 10px;
+    border: 1px solid #94a4b2;
+    color: #8187a7;
+}
+
+main article section span {
+    display: block;
+}
+
+main article section span:last-of-type {
+    color: red;
+    font-weight: bold;
+}
+
+main article section span:last-of-type::before {
+    content: "£23.90";
+    color: black;
+    margin-right: 5px;
+    text-decoration: line-through;
+}

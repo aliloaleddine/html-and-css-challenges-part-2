@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+}
+
+.boxes {
+    width: 1000px;
+    background-color: #20bfa9;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    padding: 50px 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+.boxes::before {
+    content: "OR";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    color: #20bfa9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.boxes::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 98%;
+    width: 2px;
+    background-color: white;
+}
+
+.boxes .box {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.boxes h1 {
+    color: white;
+    background: #282828;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.boxes h1 span {
+    color: #4caf50;
+}
+
+
+.boxes .down {
+    width: 250px;
+    background-color: white;
+    transform: translateY(-25px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 1px -3px 10px 4px rgba(0, 0, 0, 0.392);
+}
+
+.boxes .down ul {
+    text-align: start;
+    padding: 20px 0;
+}
+
+.boxes .down ul li {
+    position: relative;
+    padding: 10px 0;
+}
+
+.boxes .down ul li::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f73859;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+}
+
+.boxes .down a {
+    border-radius: 6px;
+    padding: 10px 40px;
+    color: white;
+    background-color: #f73859;
+}

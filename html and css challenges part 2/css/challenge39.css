@@ -1,0 +1,285 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Cairo', sans-serif;
+    display: grid;
+    grid-template-columns: 80% 19%;
+    gap: 1%;
+}
+
+/*smail*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* media */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* star nav */
+nav {
+    margin: 30px 0;
+    grid-area: 1/2/2/3;
+}
+
+nav form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+nav form input {
+    border-radius: 20px;
+    outline: none;
+    padding: 5px 10px;
+    border: 2px solid #dbe0e4;
+    box-shadow: none;
+}
+
+nav form a {
+    right: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav h3 {
+    padding: 10px 0;
+    border-bottom: 1px solid #dbe0e4;
+}
+
+nav ul li {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #95909d;
+}
+
+nav ul li span:first-child:before {
+    font-family: "font awesome 5 free";
+    content: "\f0a4";
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+nav .box {
+    display: flex;
+    border-top: 1px solid #dbe0e4;
+    padding: 20px 0;
+}
+
+nav .box img {
+    width: 50px;
+    margin-right: 5px;
+}
+
+nav .box .contens h5 {
+    margin: 5px;
+}
+
+nav .ad {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+nav .ad img {
+    width: 100%;
+    height: 100%;
+}
+
+nav .ad .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    right: 0;
+    background-color: #80808085;
+    padding: 6px;
+    text-align: center;
+}
+
+nav .ad h1 {
+    margin: 10px 0;
+}
+
+nav .ad h1 span {
+    color: #e8272e;
+}
+
+nav .ad a {
+    display: block;
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: #e8272e;
+    color: white;
+    border-radius: 25px;
+    margin: 10px 0;
+    box-shadow: 1px 3px 2px 0px #90040a;
+}
+
+nav .box:last-child {
+    display: block;
+}
+
+nav .box:last-child span {
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin: 2px;
+    display: inline-block;
+    width: fit-content;
+}
+
+/* end nav */
+
+main {
+    grid-area: 1/1/2/2;
+}
+
+main section {
+    display: flex;
+    margin: 30px 0;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgb(128 128 128 / 39%) 0px 5px 10px 1px;
+}
+
+main section img {
+    width: 300px;
+    height: 200px;
+}
+
+main section .contens {
+    margin-left: 20px;
+}
+
+main section .contens h2 {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+main section .contens .timeandcomment {
+    margin-bottom: 15px;
+}
+
+.contens span:first-child {
+    border-right: 1px solid;
+}
+
+.contens span {
+    padding: 0 5px;
+}
+
+.contens span i {
+    margin-right: 5px;
+    color: #ea5158;
+}
+
+main section .contens p {
+    color: #95909d;
+    margin-bottom: 15px;
+}
+
+main section .contens a {
+    color: #ea5158;
+}
+
+main .num {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+main .num li {
+    margin: 0px 5px;
+}
+
+main .num li a {
+    padding: 10px;
+    border: 1px solid #95909d;
+    border-radius: 50%;
+    color: #95909d;
+}
+
+main .num .active a {
+    padding: 10px;
+    border: 1px solid #e8272e;
+    border-radius: 50%;
+    color: white;
+    background-color: #e8272e;
+}
+
+.footer {
+    background: #e8272e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .Sub {
+    width: 300px;
+    font-size: 12px;
+}
+
+.footer form {
+    order: 1px solid white;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #ea3d43;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.footer input[type="email"] {
+    background-color: transparent;
+    color: white;
+}
+
+.footer input[type="email"]::placeholder {
+    color: white;
+}
+
+.footer input[type="submit"] {
+    color: #90040a;
+}
+
+footer {
+    height: 200px;
+    background-image: url(../img/backfood.jpg);
+    background-size: cover;
+}

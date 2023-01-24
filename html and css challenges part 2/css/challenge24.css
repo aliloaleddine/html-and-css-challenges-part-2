@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.boxes {
+    height: 100vh;
+    background-image: url(../img/jellyfish.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    position: relative;
+    justify-content: center;
+}
+
+.boxes .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    z-index: 1;
+    border-radius: 50%;
+    position: relative;
+}
+
+.boxes .circle:nth-of-type(1),
+.boxes .circle:nth-of-type(3) {
+    background-color: #515961;
+    height: 200px;
+    width: 200px;
+    color: white;
+    position: relative;
+}
+
+.boxes .circle:nth-of-type(2) {
+    background-color: #ffeb00;
+    height: 300px;
+    width: 300px;
+    color: #515961;
+    left: -30px;
+    z-index: -1;
+}
+
+.boxes .circle:nth-of-type(3) {
+    left: -50px;
+    z-index: -2;
+}
+
+.boxes .circle:nth-of-type(4) {
+    background-color: #ffeb00;
+    height: 200px;
+    width: 200px;
+    color: #515961;
+    left: -70px;
+    z-index: -3;
+    top: -60px;
+    position: relative;
+}
+
+.boxes .circle .box {
+    position: absolute;
+    font-size: 16px;
+    z-index: 1;
+    text-align: center;
+}
+
+.boxes .circle:nth-of-type(1) .box:first-of-type {
+    left: -200px;
+    top: -80px;
+}
+
+.boxes .circle:nth-of-type(1) .box:first-of-type h3:first-child {
+    background-color: #515961;
+    padding: 20px;
+    width: fit-content;
+}
+
+.boxes .circle:nth-of-type(1) .box:first-of-type h3:last-child {
+    background-color: white;
+    color: #515961;
+    padding: 20px;
+}
+
+.boxes .circle:nth-of-type(3) .box:last-child {
+    right: -245px;
+    bottom: -15px;
+}
+
+.boxes .circle:nth-of-type(3) .box:last-of-type h3:first-child {
+    background-color: white;
+    color: #515961;
+    padding: 20px;
+    width: fit-content;
+}
+
+.boxes .circle:nth-of-type(3) .box:last-of-type h3:last-child {
+    background-color: #ffeb00;
+    color: #515961;
+    padding: 20px;
+    position: relative;
+    right: 40px;
+}

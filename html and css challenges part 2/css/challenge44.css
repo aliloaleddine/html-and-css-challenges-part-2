@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.Real-Estate-Cards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fill, minmax(375px, 1fr));
+    gap: 10px;
+    padding: 30px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.Real-Estate-Cards .box .imag {
+    position: relative;
+}
+
+.Real-Estate-Cards .box .imag:hover .overlay {
+    height: 98%;
+    transition: 0.3s;
+}
+
+.Real-Estate-Cards .box .imag:hover .overlay a {
+    display: block;
+    transition: 0.3s;
+}
+
+.Real-Estate-Cards .box .imag::before {
+    content: "Featured";
+    position: absolute;
+    background-color: #ea723d;
+    padding: 5px;
+    color: white;
+    z-index: 1;
+}
+
+.Real-Estate-Cards .box .imag::after {
+    content: "Hot";
+    z-index: 1;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background-color: #dd3333;
+    padding: 5px;
+    color: white;
+}
+
+.Real-Estate-Cards .box .imag img {
+    width: 100%;
+    height: 350px;
+}
+
+.Real-Estate-Cards .box .imag .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+    background-color: #4eb1a5c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.Real-Estate-Cards .box .imag .overlay a {
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    font-weight: 600;
+    display: none;
+    width: fit-content;
+}
+
+.Real-Estate-Cards .box .imag .edit {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Real-Estate-Cards .box .imag .edit i {
+    color: white;
+}
+
+.Real-Estate-Cards .box .imag .edit .fa-heart {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.Real-Estate-Cards .box .imag .edit .arrow {
+    width: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Real-Estate-Cards .box .imag .edit .arrow .fa-arrow-left {
+    align-self: end;
+}
+
+.info {
+    padding: 25px;
+    background: white;
+}
+
+.info h1 {
+    padding: 20px 0;
+}
+
+.info p {
+    color: #c0b4ac;
+    padding-bottom: 20px;
+}
+
+.info ul {
+    display: flex;
+}
+
+.info ul li {
+    margin-right: 35px;
+}
+
+.info ul li h5 {
+    padding: 15px 0;
+}
+
+.info ul li .count i {
+    margin-right: 5px;
+    color: #b3b3b3;
+    font-size: 25px;
+}
+
+.info h4 {
+    padding: 10px 0;
+}
+
+.info span {
+    color: #4ab0a7;
+    font-weight: 700;
+}
+
+/*smail*/
+@media (max-width: 768px) {
+    .Real-Estate-Cards {
+        padding: 0;
+    }
+}

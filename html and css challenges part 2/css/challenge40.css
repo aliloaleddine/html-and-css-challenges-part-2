@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.cont {
+    background-image: linear-gradient(to right, #dbe0e4 30%, #3729b2 30%);
+    height: 793px;
+    position: relative;
+}
+
+.cont .box {
+    width: 1140px;
+    height: 600px;
+    transform: translate(15%, 15%);
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+
+.cont .box::before {
+    content: " ";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #0fda9a;
+    border-radius: 50%;
+    z-index: -1;
+    top: -50px;
+    left: -50px;
+}
+
+.cont .box .nav {
+    width: 46%;
+    background-color: #3729b2;
+    padding: 30px;
+    color: white;
+
+}
+
+.cont .box .info {
+    flex-grow: 1;
+}
+
+.cont .box .nav .logo {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.cont .box .nav .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.cont .box .nav ul li {
+    padding: 15px 0;
+}
+
+.cont .box .nav ul li a {
+    color: #7167c7;
+    width: 100px;
+    display: block;
+    padding: 5px 0px 5px 10px;
+    border-radius: 5px;
+}
+
+.cont .box .nav ul .active a {
+    background-color: #4d40b9;
+}
+
+.cont .box .nav .foot span:first-child,
+.cont .box .nav .foot p {
+    padding: 20px 0;
+    color: #7167c7;
+}
+
+.cont .box .info {
+    padding: 30px;
+}
+
+.cont .box .info .inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont .box .info .inputs form {
+    width: 40%;
+}
+
+.cont .box .info .inputs div {
+    width: 40%;
+}
+
+.cont .box .info .inputs a,
+.cont .box .info .inputs input,
+.cont .box .info .inputs textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    display: block;
+    padding: 5px 0 0 5px;
+    width: 100%;
+    margin: 50px 0;
+    resize: none;
+}
+
+.cont .box .info .inputs p,
+.cont .box .info .inputs span {
+    display: block;
+    padding: 10px 0;
+    color: #cccccc;
+}
+
+.cont .box .info .inputs span {
+    color: #4d40b9;
+}
+
+.cont .box .info .inputs a {
+    font-weight: bold;
+}

@@ -1,0 +1,90 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #f3f6f9;
+}
+
+body {
+    background-color: #f3f6f9;
+    font-family: 'Cairo', sans-serif;
+}
+
+body>h1,
+body>p {
+    position: relative;
+    text-align: center;
+    padding: 30px 0;
+}
+
+body>h1::after {
+    content: " ";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0;
+    left: 50%;
+    background-color: #2980b9;
+}
+
+.offers {
+    padding: 0 100px;
+}
+
+.offers .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: white;
+    position: relative;
+}
+
+.offers .box:nth-of-type(1)::before {
+    content: "Featured";
+    position: absolute;
+    rotate: -90deg;
+    border-top: 2px solid #2980b9;
+    background-color: white;
+    left: -105px;
+    top: 48px;
+    text-align: center;
+    width: 160px;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.offers .box .content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.offers .box .content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers .box .content .col:nth-of-type(1) span {
+    background-color: #7fb13d;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.offers .box .content .col a {
+    background-color: #2980b9;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    width: 150px;
+    display: block;
+    text-align: center;
+}

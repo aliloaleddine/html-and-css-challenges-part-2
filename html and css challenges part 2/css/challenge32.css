@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.Pricing-Plans {
+    display: flex;
+    margin: 200px auto;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 650px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.Pricing-Plans .box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 30px 0;
+}
+
+.Pricing-Plans .box:first-child {
+    background-color: #1998ff;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 30px 0;
+}
+
+.Pricing-Plans .box:last-child {
+    color: #545454;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 30px 0;
+    border: 1px solid #e0e0e0;
+}
+
+.Pricing-Plans .box .pric {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-91px);
+    margin-bottom: -80px;
+    background-color: white;
+}
+
+.Pricing-Plans .box:first-child .pric {
+    border: 1px solid #1998ff;
+}
+
+.Pricing-Plans .box:last-child .pric {
+    border: 1px solid #e0e0e0;
+}
+
+.Pricing-Plans .box:first-child .pric::after {
+    content: "hot";
+    position: absolute;
+    top: -15px;
+    color: #1998ff;
+    border: 1px solid #1998ff;
+    background: white;
+    height: 40px;
+    width: 40px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    border-radius: inherit;
+    right: 0;
+}
+
+.Pricing-Plans .box .pric .overlay {
+    content: " ";
+    width: 80%;
+    height: 80%;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1998ff;
+}
+
+.Pricing-Plans .box .pric .overlay {
+    content: " ";
+    width: 80%;
+    height: 80%;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.Pricing-Plans .box:first-child .pric .overlay {
+    background-color: #1998ff;
+}
+
+.Pricing-Plans .box:last-child .pric .overlay {
+    background-color: #545454;
+    color: white;
+}
+
+.Pricing-Plans .box h1 {
+    padding: 20px 0;
+}
+
+.Pricing-Plans .box ul {
+    width: 100%;
+}
+
+.Pricing-Plans .box:first-child ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #178ded;
+    border-top: 1px solid #178ded;
+}
+
+.Pricing-Plans .box:last-child ul li {
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    color: #888888;
+}
+
+.Pricing-Plans .box a {
+    margin: 30px 0;
+    padding: 15px 30px;
+    border-radius: 25px;
+}
+
+.Pricing-Plans .box:first-child a {
+    background-color: white;
+    color: #1998ff;
+}
+
+.Pricing-Plans .box:last-child a {
+    background-color: #1998ff;
+    color: white;
+}

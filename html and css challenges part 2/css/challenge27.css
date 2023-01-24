@@ -1,0 +1,147 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*smail*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* media */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+img {
+    width: 100px;
+    height: 50px;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+li,
+p,
+h4 {
+    color: #7d7d7d;
+    margin: 10px 5px;
+}
+
+.Ultimate-Footer {
+    background-color: #333333;
+}
+
+.Ultimate-Footer .container {
+    display: flex;
+    color: white;
+    padding: 20px 0;
+}
+
+.Ultimate-Footer .col {
+    padding: 0 20px;
+}
+
+.Ultimate-Footer .col:first-child,
+.Ultimate-Footer .col:last-child {
+    flex: 1;
+}
+
+.Ultimate-Footer .col .address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Ultimate-Footer .col form input[type='text'] {
+    background-color: #4c4c4c;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.Ultimate-Footer .col form input[type='text']::placeholder {
+    color: #7d7d7d;
+}
+
+.Ultimate-Footer .col form input[type='submit'] {
+    background-color: #e52e2e;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.Ultimate-Footer .col:last-child ul {
+    display: flex;
+    align-items: center;
+}
+
+.Ultimate-Footer .col:last-child ul li a i {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.Ultimate-Footer .col:last-child ul li:first-child a i {
+    background-color: #3c5a99;
+}
+
+.Ultimate-Footer .col:last-child ul li:nth-child(2) a i {
+    background-color: #00a2e8;
+}
+
+.Ultimate-Footer .col:last-child ul li:nth-child(3) a i {
+    background-color: #e52e2e;
+}
+
+.Ultimate-Footer .col:last-child ul li:nth-child(4) a i {
+    background-color: #815dc7;
+}
+
+.Ultimate-Footer .col:last-child ul li:nth-child(5) a i {
+    background-color: #ffc338;
+    color: #333333;
+    rotate: 45deg;
+}
+
+footer {
+    background-color: #2b2b2b;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer span {
+    color: white;
+}
+
+footer ul {
+    display: flex;
+}

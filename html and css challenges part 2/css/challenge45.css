@@ -1,0 +1,442 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ed686b;
+    height: 100vh;
+    position: relative;
+}
+
+.Alpha-Romeo {
+    position: absolute;
+    perspective: 20px;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.Alpha-Romeo::before {
+    content: " ";
+    left: 50%;
+    position: absolute;
+    bottom: -75px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: -5;
+    background-color: rgb(255, 153, 154);
+    border: 35px solid rgb(255, 117, 120);
+    box-shadow: rgb(254 130 130) 0px 0px 0px 50px inset;
+}
+
+.Alpha-Romeo::after {
+    content: " ";
+    left: 50%;
+    position: absolute;
+    bottom: -4px;
+    width: 430px;
+    background-color: #222021;
+    height: 30px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: -5;
+}
+
+.Alpha-Romeo .Miror {
+    position: relative;
+    width: 251px;
+    height: 90px;
+    transform: translateX(-50%) rotateX(3deg);
+    left: 50%;
+    top: 178px;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    box-shadow: inset 0px 3px 0px 3px white, inset 0px 5px 0px 4px black;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Alpha-Romeo .Miror .rear-view-mirror {
+    perspective: 60px;
+}
+
+.Alpha-Romeo .Miror .rear-view-mirror::before {
+    content: " ";
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    background-color: #251d1f;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%) rotateX(24deg);
+    border-radius: 5px;
+}
+
+.Alpha-Romeo .Miror .rear-view-mirror::after {
+    content: " ";
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background-color: #251d1f;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Alpha-Romeo .Miror .front-seat::after {
+    content: " ";
+    position: absolute;
+    bottom: -2px;
+    right: 20px;
+    width: 70px;
+    height: 15px;
+    background-color: #251f22;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.Alpha-Romeo .Miror .front-seat::before {
+    content: " ";
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+    width: 70px;
+    height: 15px;
+    background-color: #251f22;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.Alpha-Romeo .steering-wheel {
+    content: " ";
+    position: absolute;
+    top: 240px;
+    right: 188px;
+    width: 60px;
+    height: 50px;
+    border: 3px solid #251f22;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.Alpha-Romeo .Miror::before {
+    content: " ";
+    width: 44px;
+    height: 100px;
+    top: 9px;
+    position: absolute;
+    left: 6px;
+    background-color: #ffffff5c;
+    border-top-left-radius: 120px 280px;
+}
+
+.Alpha-Romeo .Miror::after {
+    content: " ";
+    width: 44px;
+    height: 106px;
+    top: 12px;
+    position: absolute;
+    right: -12px;
+    background-color: #ffffff5c;
+    transform: rotate(30deg);
+}
+
+.Alpha-Romeo .intro {
+    background-color: #ed3f41;
+    width: 400px;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 5px -5px 1px 1px white;
+    border: 2px solid;
+    bottom: -175px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Alpha-Romeo .intro::after {
+    content: " ";
+    width: 40px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    left: 8px;
+    top: 35px;
+    position: absolute;
+    border: 5px solid;
+    box-shadow: inset 0px -10px 0px -2px #aa2729, inset 0px -6px 0px 4px black, inset 0px 6px 0px 0px #bfbdbdc6;
+}
+
+.Alpha-Romeo .intro::before {
+    content: " ";
+    width: 40px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    right: 8px;
+    top: 35px;
+    position: absolute;
+    border: 5px solid;
+    box-shadow: inset 1px -10px 0px -2px #aa2729, inset 0px -6px 0px 4px black, inset 0px 6px 0px 0px #bfbdbdc6;
+}
+
+.Alpha-Romeo .intro .bonnet {
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 290px;
+    height: 60px;
+    background-color: #d8383d;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 160px 180px;
+    border-bottom-right-radius: 160px 180px;
+    box-shadow: 0px -10px 0px 6px;
+}
+
+.Alpha-Romeo .intro .bonnet::before {
+    content: " ";
+    background-color: #d8383d;
+    top: -1px;
+    left: 50%;
+    width: 290px;
+    height: 10px;
+    transform: translateX(-50%);
+    position: absolute;
+    border-bottom-left-radius: 325px 200px;
+    border-bottom-right-radius: 325px 200px;
+    z-index: 1;
+}
+
+.Alpha-Romeo .intro .bonnet::after {
+    content: " ";
+    background-color: #ef5557;
+    top: -1px;
+    left: 50%;
+    width: 290px;
+    height: 55px;
+    transform: translateX(-50%);
+    position: absolute;
+    border-bottom-left-radius: 172px 200px;
+    border-bottom-right-radius: 172px 200px;
+}
+
+.Alpha-Romeo .intro .hazard-lights {
+    position: relative;
+    height: 60px;
+    margin-top: 30px;
+    background-image: linear-gradient(180deg, #cd3234 20%, #cb4045 20%, #cb4045 80%, #80201f 80%);
+    box-shadow: inset 9px 0px 1px 0px white;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.Alpha-Romeo .intro .hazard-lights .fang-lamp {
+    position: absolute;
+    top: 5px;
+    width: 158px;
+    height: 37px;
+    border: 2px solid;
+    background-color: white;
+    box-shadow: inset 0px -5px 0px 0px #b8b8b8;
+}
+
+.Alpha-Romeo .intro .hazard-lights .l {
+    left: 10px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 25px;
+}
+
+.Alpha-Romeo .intro .hazard-lights .r {
+    right: 10px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 25px;
+}
+
+.Alpha-Romeo .intro .hazard-lights .fang-lamp::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 15px;
+    background-color: #ed8e40;
+    border: 2px solid;
+    z-index: 1;
+    transform: translateY(-50%);
+    box-shadow: inset 1px 3px 0px 2px #a96a36;
+}
+
+.Alpha-Romeo .intro .hazard-lights .l::before {
+    left: 0;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Alpha-Romeo .intro .hazard-lights .r::before {
+    right: 0;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.Alpha-Romeo .intro .hazard-lights .fang-lamp::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    width: 92%;
+    height: 15px;
+    background-color: #363332;
+    border: 2px solid;
+    transform: translateY(-50%);
+    box-shadow: inset 1px 3px 0px 2px #222021;
+}
+
+.Alpha-Romeo .intro .hazard-lights .l::after {
+    left: 0;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Alpha-Romeo .intro .hazard-lights .r::after {
+    right: 0;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.Alpha-Romeo .intro .hazard-lights .logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    width: 28px;
+    height: 38px;
+    background-image: linear-gradient(0deg, #353231 28%, white 28%, white 34%, #353231 34%, #353231 46%, white 46%, white 52%, #353231 52%, #353231 64%, white 64%, white 70%, #353231 70%, #353231 82%, white 82%, white 88%, #353231 88%, #353231 100%);
+    transform: translateX(-50%);
+    border-bottom-left-radius: 30px 40px;
+    border-bottom-right-radius: 30px 40px;
+    border: 5px solid white;
+    border-top-left-radius: 23px 15px;
+    border-top-right-radius: 23px 14px;
+}
+
+.Alpha-Romeo .intro .hazard-lights .logo::before {
+    content: " ";
+    left: 50%;
+    top: -15px;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 15px;
+    background-color: #353231;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: inset 0px 2px 0px 1px white;
+}
+
+.Alpha-Romeo .intro .hazard-lights .logo::after {
+    position: absolute;
+    content: " ";
+    left: 50%;
+    top: -6px;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 7px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.Alpha-Romeo .wing-mirror {
+    position: absolute;
+    right: 120px;
+    top: 265px;
+    width: 17px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid;
+}
+
+.wheel {
+    position: relative;
+}
+
+.wheel::before {
+    content: " ";
+    left: 110px;
+    height: 90px;
+    width: 45px;
+    position: absolute;
+    background-color: #363231;
+    top: 132px;
+    z-index: -1;
+    border-radius: 12px;
+    box-shadow: inset 0px -10px 1px #4e4848;
+    border: 3px solid;
+}
+
+.wheel::after {
+    content: " ";
+    right: 110px;
+    height: 90px;
+    width: 45px;
+    position: absolute;
+    background-color: #363231;
+    top: 132px;
+    z-index: -1;
+    border-radius: 12px;
+    box-shadow: inset 0px -10px 1px #4e4848;
+    border: 3px solid;
+}
+
+.sat-nav {
+    position: absolute;
+    left: 160px;
+    top: 116px;
+    height: 165px;
+    width: 2px;
+    background-color: white;
+    transform: rotateX(1.5deg);
+}
+
+.sat-nav::before {
+    content: " ";
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sat-nav::after {
+    content: " ";
+
+    content: " ";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -58px;
+    height: 60px;
+    width: 0.5px;
+    background-color: white;
+}
+
+.box {
+    position: absolute;
+    width: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 55px;
+    background-color: #222121;
+    height: 20px;
+    border-radius: 10px;
+    z-index: -1;
+}

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.Ribbon {
+    display: flex;
+    margin-top: 20px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.Ribbon .box {
+    background-color: #fafafa;
+    text-align: center;
+    position: relative;
+    width: calc((100% / 5) - 5px);
+    padding: 20px 0;
+    color: white;
+    margin-left: 1px;
+}
+
+.Ribbon .box h1 {
+    margin-bottom: 10px;
+    background-color: #fc5103;
+    padding: 25px 0;
+}
+
+.Ribbon .box .pre {
+    position: relative;
+    font-weight: 800;
+    font-size: 50px;
+    color: #fc5103;
+}
+
+.Ribbon .box .pre::before {
+    content: "$";
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 40px);
+    font-size: 20px;
+    color: #666666;
+}
+
+.Ribbon .box .pre span::before {
+    content: "99";
+    position: absolute;
+    top: -5px;
+    font-size: 20px;
+    right: calc(50% - 50px);
+    color: #666666;
+}
+
+.Ribbon .box .pre span::after {
+    content: "Year";
+    position: absolute;
+    bottom: 10px;
+    font-size: 16px;
+    right: calc(50% - 61px);
+    color: #aaaaaf;
+}
+
+.Ribbon .box a {
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: rgb(51, 51, 51);
+    border-radius: 10px;
+}
+
+.Ribbon .box ul {
+    margin: 30px 0;
+    margin-bottom: 40px;
+    color: #393939;
+}
+
+.Ribbon .box:first-child ul {
+    margin: 98px 0;
+    color: #aaaaaf;
+}
+
+.Ribbon .box ul li {
+    padding: 20px 0;
+}
+
+.Ribbon .box ul li i {
+    font-weight: bolder;
+}
+
+.Ribbon .box ul li:nth-child(2n+1) {
+    background-color: #f7f7f7;
+}
+
+.Ribbon .box:nth-child(4) a {
+    background-color: #fc5103;
+}
